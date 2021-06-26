@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #aca9a9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.main {
+  margin: 40px auto;
+  width: 450px;
+}
+
+h2 {
+  color: rgb(133, 17, 6);
+  font-weight: 800;
+  line-height: 1.83em;
+}
+
+h1 {
+  letter-spacing: 2px;
+  margin: 0;
+  color: rgb(67, 67, 236);
+}
+
+h3 {
+  border-bottom: 1px solid rgb(51, 50, 50);
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.inc-exp-main {
+  background-color: #fff;
+  box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.inc-exp-main > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-main > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #09fc6e;
+}
+
+.money.minus {
+  color: #c0392b;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #dedede;
+  border-radius: 25px;
+  display: block;
+  font-size: 16px;
+  padding: 0.71rem 1.2rem;
+  width: 100%;
+  outline: none;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #5b3afc;
+  box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 30px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: 3px 2px 2px 0px rgba(0, 0, 0, 0.75);
+
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
